@@ -13,10 +13,8 @@ const pData = [
       "I completely redesigned and replatformed this organization's online presence, resulting in a significant increase in new patients and revenue.",
     image: "/img/lbh.png",
     tag: ["All", "Professional"],
-    gitUrl:
-      "https://vicers.net/how-i-helped-revamp-an-organizations-online-presence/",
     previewUrl: "https://lifebridgehealth.org/",
-    techList: ["HTML5 - ", "CSS3 - ", "PHP - ", "MySQL - ", "Drupal"],
+    techList: ["HTML5", "CSS3", "PHP", "MySQL", "Drupal"],
   },
   {
     id: 2,
@@ -25,10 +23,8 @@ const pData = [
       "While in college, I was commissioned to develop a website for a Business Fraternity, and they still use it to this day.",
     image: "/img/akpsi.png",
     tag: ["All", "Professional"],
-    gitUrl:
-      "https://vicers.net/that-time-a-fraternity-asked-me-to-revamp-their-website/",
     previewUrl: "https://www.ttuakpsi.com/",
-    techList: ["HTML5 - ", "CSS3 - ", "PHP - ", "MySQL - ", "Wordpress"],
+    techList: ["HTML5", "CSS3", "PHP", "MySQL", "Wordpress"],
   },
   {
     id: 3,
@@ -37,9 +33,8 @@ const pData = [
       "I built this website for the gaming community I started over 10 years ago, and it has gone through several iterations",
     image: "/img/gamers.png",
     tag: ["All", "Personal"],
-    gitUrl: "https://vicers.net/the-journey-of-building-my-gaming-community/",
     previewUrl: "https://vicegamers.com/",
-    techList: ["HTML5 - ", "CSS3 - ", "Javascript - ", "MySQL"],
+    techList: ["HTML5", "CSS3", "Javascript", "MySQL"],
   },
   {
     id: 4,
@@ -48,9 +43,8 @@ const pData = [
       "I developed this website from scratch to showcase and promote my own community of like-minded adult creatives.",
     image: "/img/creators.png",
     tag: ["All", "Personal"],
-    gitUrl: "https://vicers.net/i-built-a-small-community-for-creatives/",
     previewUrl: "https://vicecreators.com/",
-    techList: ["HTML5 - ", "CSS3 - ", "PHP - ", "MySQL - ", "Javascript"],
+    techList: ["HTML5", "CSS3", "PHP", "MySQL", "Javascript"],
   },
   {
     id: 5,
@@ -59,10 +53,8 @@ const pData = [
       "I created this website to showcase on distribute my own music.",
     image: "/img/music.png",
     tag: ["All", "Personal"],
-    gitUrl:
-      "https://vicers.net/my-journey-began-with-a-music-site-bignotch-com-2006-present/",
     previewUrl: "https://bignotch.com/",
-    techList: ["HTML5 - ", "CSS3 - ", "PHP - ", "MySQL - ", "Drupal"],
+    techList: ["HTML5", "CSS3", "PHP", "MySQL", "Drupal"],
   },
   {
     id: 6,
@@ -71,9 +63,18 @@ const pData = [
       "I built this website to chronicle my development journey in areas like full-stack applications, VR development, and AI language model learning.",
     image: "/img/vicers.png",
     tag: ["All", "Personal"],
-    gitUrl: "https://vicers.net/",
     previewUrl: "https://vicers.net/",
-    techList: ["HTML5 - ", "CSS3 - ", "PHP - ", "MySQL - ", "Wordpress"],
+    techList: ["HTML5", "CSS3", "PHP", "MySQL", "Wordpress"],
+  },
+  {
+    id: 7,
+    title: "Potts Home Restoration",
+    description:
+      "I developed this website for a home restoration company to showcase their services and connect with potential clients.",
+    image: "/img/potts.png",
+    tag: ["All", "Professional"],
+    previewUrl: "https://pottshomerestoration.com",
+    techList: ["Wordpress", "TailwindCSS", "React", "PHP"],
   },
 ];
 
@@ -135,7 +136,6 @@ const PortfolioSection = () => {
               title={project.title}
               description={project.description}
               imgUrl={project.image}
-              gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
               techList={project.techList}
             />

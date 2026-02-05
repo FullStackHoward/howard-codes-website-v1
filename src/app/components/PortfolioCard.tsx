@@ -1,12 +1,11 @@
 import React from "react";
-import { PencilSquareIcon, EyeIcon } from "@heroicons/react/24/solid";
+import { EyeIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 
 const PortfolioCard = ({
   imgUrl,
   title,
   description,
-  gitUrl,
   previewUrl,
   techList,
 }: any) => {
@@ -16,13 +15,7 @@ const PortfolioCard = ({
         className="relative h-52 md:h-72 rounded-t-xl group"
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
       >
-        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 space-x-2">
-          <Link
-            href={gitUrl}
-            className="h-14 w-14 border-2 relative rounded-full border-[#d9d9d9] hover:border-white group/link"
-          >
-            <PencilSquareIcon className="h-10 w-10 text-[#d9d9d9] absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-[#957eba]" />
-          </Link>
+        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
           <Link
             href={previewUrl}
             className="h-14 w-14 border-2 relative rounded-full border-[#d9d9d9] hover:border-white group/link"
@@ -37,7 +30,7 @@ const PortfolioCard = ({
           {title}
         </h5>
         <p className="text-light opacity-75">{description}</p>
-        <p className=" space-x-1 italic text-sm pt-3 opacity-45">{techList}</p>
+        <p className=" space-x-1 italic text-sm pt-3 opacity-45">{techList.join(" - ")}</p>
       </div>
     </div>
   );

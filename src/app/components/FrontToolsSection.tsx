@@ -18,15 +18,6 @@ const FrontToolsSection = () => {
         <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
           <li>
             <Image
-              src="/svg/frontend/babylon.svg"
-              alt="Baby"
-              className="w-auto h-[70px]"
-              width={300}
-              height={300}
-            />
-          </li>
-          <li>
-            <Image
               src="/svg/frontend/blender.svg"
               alt="Blender"
               className="w-auto h-[70px]"
@@ -174,15 +165,6 @@ const FrontToolsSection = () => {
           className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
           aria-hidden="true"
         >
-          <li>
-            <Image
-              src="/svg/frontend/babylon.svg"
-              alt="Baby"
-              className="w-auto h-[70px]"
-              width={300}
-              height={300}
-            />
-          </li>
           <li>
             <Image
               src="/svg/frontend/blender.svg"

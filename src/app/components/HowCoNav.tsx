@@ -3,41 +3,25 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import MenuOverlay from "@/app/components/MenuOverlay";
-import MailIcon from "./icons/MailIcn";
-import LinkedInIcon from "./icons/LinkedinIcn";
-import TwitterIcon from "./icons/TwitterIcn";
-import ResumeIcon from "./icons/ResumeIcn";
-import GithubIcon from "./icons/GithubIcn";
-import BlogIcon from "./icons/BlogIcn";
-import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 
 const navLinks = [
   {
-    path: "https://vicers.net",
-    compName: <BlogIcon />,
+    path: "#about",
+    title: "About",
   },
   {
-    path: "/doc/cv.pdf",
-    compName: <ResumeIcon />,
+    path: "#tools",
+    title: "Tools",
   },
   {
-    path: "https://mailto:josh@howard.codes",
-    compName: <MailIcon />,
+    path: "#portfolio",
+    title: "Portfolio",
   },
   {
-    path: "https://www.linkedin.com/in/howardcodes/",
-    compName: <LinkedInIcon />,
-  },
-
-  {
-    path: "https://github.com/MrHowardCodes",
-    compName: <GithubIcon />,
-  },
-  {
-    path: "https://twitter.com/ItsNotch64",
-    compName: <TwitterIcon />,
+    path: "#contact",
+    title: "Contact",
   },
 ];
 
@@ -80,10 +64,15 @@ const HowCoNav = () => {
           className="menu hidden md:block md:w-auto"
           id="navbar"
         >
-          <ul className="flex p-1 md:p-1 md:flex-row md:space-x-1 mt-0">
+          <ul className="flex p-1 md:p-1 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink href={link.path} compName={link.compName} />
+                <Link 
+                  href={link.path} 
+                  className="block py-2 pl-3 pr-4 text-[#deafd1] text-2xl md:text-3xl rounded md:p-0 hover:text-white transition-colors duration-200"
+                >
+                  {link.title}
+                </Link>
               </li>
             ))}
           </ul>

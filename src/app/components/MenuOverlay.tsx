@@ -1,40 +1,36 @@
 import React from "react";
-import NavLink from "@/app/components/NavLink";
+import Link from "next/link";
 
 const mobileNavLinks = [
   {
-    path: "https://vicers.net",
-    compName: "Blog",
+    path: "#about",
+    title: "About",
   },
   {
-    path: "/doc/resume.pdf",
-    compName: "Resume",
+    path: "#tools",
+    title: "Tools",
   },
   {
-    path: "mailto:josh@howard.codes",
-    compName: "Contact",
+    path: "#portfolio",
+    title: "Portfolio",
   },
   {
-    path: "https://www.linkedin.com/in/howardcodes/",
-    compName: "LinkedIn",
-  },
-
-  {
-    path: "https://github.com/MrHowardCodes",
-    compName: "Github",
-  },
-  {
-    path: "https://x.com/ItsNotch64",
-    compName: "Twitter/X",
+    path: "#contact",
+    title: "Contact",
   },
 ];
 
 const MenuOverlay = () => {
   return (
-    <ul className="flex flex-col py-4 items-center bg-slate-900 bg-opacity-50 text-lg text-white">
+    <ul className="flex flex-col py-4 items-center bg-slate-900 bg-opacity-50 text-white">
       {mobileNavLinks.map((link, index) => (
         <li key={index} className="hover:font-black hover:border-white">
-          <NavLink href={link.path} compName={link.compName} />
+          <Link 
+            href={link.path}
+            className="block py-2 px-4 text-[#deafd1] text-2xl hover:text-white transition-colors duration-200"
+          >
+            {link.title}
+          </Link>
         </li>
       ))}
     </ul>

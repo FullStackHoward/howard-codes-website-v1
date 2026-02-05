@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import txtstyles from "@/app/styles/howco.module.css";
 import styles from "@/app/styles/howco-text.module.scss";
+import SectionDivider2 from "@/app/components/graphics/SectionDivider2";
 
 const BackToolsSection = () => {
   return (
@@ -67,15 +68,6 @@ const BackToolsSection = () => {
               height={300}
               width={300}
               alt="Docker"
-            />
-          </div>
-          <div>
-            <Image
-              src="/svg/backend/dot-net.svg"
-              className="w-auto h-[70px] p-2"
-              height={300}
-              width={300}
-              alt=".Net"
             />
           </div>
           <div>
@@ -215,82 +207,8 @@ const BackToolsSection = () => {
           </div>
         </div>
       </div>
-      <div
-        id="marketing"
-        className="inline-flex relative mx-auto p-12 max-w-3xl md:justify-center md:items-center space-x-6"
-      >
-        <div>
-          <h2 className="text-white text-xl drop-shadow">
-            Honorable Mentions:
-          </h2>
-        </div>
-        <div id="marketing-list" className="inline-flex flex-nowrap ">
-          <ul className="flex md:items-center space-x-3 opacity-75 ">
-            <li>
-              <Image
-                src="/svg/marketing/clickup.svg"
-                alt="ClickUp"
-                className="w-auto h-[30px]"
-                width={300}
-                height={300}
-              />
-            </li>
-            <li>
-              <Image
-                src="/svg/marketing/confluence.svg"
-                alt="Confluence"
-                className="w-auto h-[30px]"
-                width={300}
-                height={300}
-              />
-            </li>
-            <li>
-              <Image
-                src="/svg/marketing/ga.svg"
-                alt="Google Analytics"
-                className="w-auto h-[30px]"
-                width={300}
-                height={300}
-              />
-            </li>
-            <li>
-              <Image
-                src="/svg/marketing/hotjar.svg"
-                alt="Hotjar"
-                className="w-auto h-[30px]"
-                width={300}
-                height={300}
-              />
-            </li>
-            <li>
-              <Image
-                src="/svg/marketing/jira.svg"
-                alt="Jira"
-                className="w-auto h-[30px]"
-                width={300}
-                height={300}
-              />
-            </li>
-            <li>
-              <Image
-                src="/svg/marketing/monday.svg"
-                alt="Monday"
-                className="w-auto h-[30px]"
-                width={300}
-                height={300}
-              />
-            </li>
-            <li>
-              <Image
-                src="/svg/marketing/salesforce.svg"
-                alt="SalesForce"
-                className="w-auto h-[30px]"
-                width={300}
-                height={300}
-              />
-            </li>
-          </ul>
-        </div>
+      <div className="w-screen">
+        <SectionDivider2 />
       </div>
     </section>
   );

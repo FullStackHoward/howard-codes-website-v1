@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import { mrounded } from "@/app/fonts";
 import { M_PLUS_Rounded_1c } from "next/font/google";
 import Script from "next/script";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const MroundedPlus = M_PLUS_Rounded_1c({
   subsets: ["latin"],
@@ -42,7 +38,7 @@ export default function RootLayout({
           }}
         ></Script>
       </head>
-      <body className={` ${MroundedPlus.variable} font-sans overflow-x-hidden`}>
+      <body className={`${MroundedPlus.variable} font-sans overflow-x-hidden`}>
         {children}
       </body>
     </html>

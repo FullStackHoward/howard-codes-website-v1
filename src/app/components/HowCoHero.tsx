@@ -20,7 +20,7 @@ const HowCoHero = () => {
           className="col-span-4 place-self-center mt-4 lg:mt-0 "
         >
           <Image
-            src="/assets/howco-animoji.png"
+            src="/svg/howco-avi.svg"
             alt="hero image"
             className="transform sm:w-[350px] sm:h-auto"
             width={300}
@@ -34,7 +34,7 @@ const HowCoHero = () => {
             transition={{ duration: 0.5 }}
             className=" hidden text-white text-base mb-4 md:block lg:text-3xl  lg:ml-[170px] font-normal"
           >
-            Hi, I'm Josh
+            Hi, I'm Howard
           </motion.p>
           <motion.h1
             initial={{ scale: 0, opacity: 0 }}
@@ -48,13 +48,11 @@ const HowCoHero = () => {
               <TypeAnimation
                 sequence={[
                   "Full-Stack Developer",
-                  1000,
-                  "Digital Marketer",
-                  1000,
-                  "Web Designer",
-                  1000,
+                  3000,
+                  "DevOps Engineer",
+                  3000,
                   "Cloud Engineer",
-                  1000,
+                  3000,
                 ]}
                 wrapper="span"
                 speed={20}
@@ -69,22 +67,22 @@ const HowCoHero = () => {
             className="flex flex-col space-y-8 md:space-y-0 items-center justify-center text-center button md:flex-row md:space-x-12"
           >
             <Link
-              href="mailto:josh@howard.codes"
-              className={`${styles.btn} shadow-xl w-[400px] h-[55px] md:w-[200px]`}
+              href="mailto:josh@fullstackhoward.com"
+              className={`${styles.btn} shadow-xl w-[300px] min-[400px]:w-[400px] h-[55px] md:w-[200px]`}
             >
-              <span className="relative inline-block top-[0.7rem]">
+              <span className="relative inline-block top-[0.7rem] text-sm min-[400px]:text-base">
                 Contact Me
-                <EnvelopeIcon className="h-8 w-8 inline-block pl-2 mb-1" />
+                <EnvelopeIcon className="hidden min-[400px]:inline-block h-6 w-6 min-[400px]:h-8 min-[400px]:w-8 pl-2 mb-1" />
               </span>
             </Link>
             <Link
               href={"/doc/resume.pdf"}
               scroll={true}
-              className={`${styles.btn2} shadow-xl w-[400px] h-[55px] md:w-[200px]`}
+              className={`${styles.btn2} shadow-xl w-[300px] min-[400px]:w-[400px] h-[55px] md:w-[200px]`}
             >
-              <span className="relative inline-block top-2">
+              <span className="relative inline-block top-2 text-sm min-[400px]:text-base">
                 My Resume
-                <ArrowDownCircleIcon className="h-8 w-8 inline-block pl-2 mb-1 " />
+                <ArrowDownCircleIcon className="hidden min-[400px]:inline-block h-6 w-6 min-[400px]:h-8 min-[400px]:w-8 pl-2 mb-1 " />
               </span>
             </Link>
           </motion.div>

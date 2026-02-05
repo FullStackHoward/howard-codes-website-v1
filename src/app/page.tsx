@@ -8,6 +8,7 @@ import BackToolsSection from "./components/BackToolsSection";
 import TiltDivider from "@/app/components/graphics/TiltDivider";
 import SectionDivider2 from "@/app/components/graphics/SectionDivider2";
 import PortfolioSection from "./components/PortfolioSection";
+import ContactSection from "./components/ContactSection";
 import FooterSection from "./components/FooterSection";
 
 export default function Home() {
@@ -31,11 +32,11 @@ export default function Home() {
         <div className="z-5  overflow-hidden">
           <BackToolsSection />
         </div>
-        <div className="mt-[-1.25rem] w-screen">
-          <SectionDivider2 />
-        </div>
         <div className="mt-[-1px]">
           <PortfolioSection />
+        </div>
+        <div className="">
+          <ContactSection />
         </div>
         <div className="rotate-180 mt-[-1px]">
           <SectionDivider1 />
