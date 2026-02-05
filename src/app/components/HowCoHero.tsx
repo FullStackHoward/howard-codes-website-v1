@@ -68,21 +68,21 @@ const HowCoHero = () => {
           >
             <Link
               href="mailto:josh@fullstackhoward.com"
-              className={`${styles.btn} shadow-xl w-[300px] min-[400px]:w-[400px] h-[55px] md:w-[200px]`}
+              className={`${styles.btn} shadow-xl w-[300px] min-[400px]:w-[400px] h-[55px] md:w-[200px] lg:w-[280px] lg:h-[70px]`}
             >
-              <span className="relative inline-block top-[0.7rem] text-sm min-[400px]:text-base">
+              <span className="relative inline-block top-[0.7rem] lg:top-[1rem] text-sm min-[400px]:text-base lg:text-xl">
                 Contact Me
-                <EnvelopeIcon className="hidden min-[400px]:inline-block h-6 w-6 min-[400px]:h-8 min-[400px]:w-8 pl-2 mb-1" />
+                <EnvelopeIcon className="hidden min-[400px]:inline-block h-6 w-6 min-[400px]:h-8 min-[400px]:w-8 lg:h-10 lg:w-10 pl-2 mb-1" />
               </span>
             </Link>
             <Link
               href={"/doc/resume.pdf"}
               scroll={true}
-              className={`${styles.btn2} shadow-xl w-[300px] min-[400px]:w-[400px] h-[55px] md:w-[200px]`}
+              className={`${styles.btn2} shadow-xl w-[300px] min-[400px]:w-[400px] h-[55px] md:w-[200px] lg:w-[280px] lg:h-[70px] lg:flex lg:items-center lg:justify-center`}
             >
-              <span className="relative inline-block top-2 text-sm min-[400px]:text-base">
+              <span className="relative inline-block top-2 lg:static lg:flex lg:items-center text-sm min-[400px]:text-base lg:text-xl">
                 My Resume
-                <ArrowDownCircleIcon className="hidden min-[400px]:inline-block h-6 w-6 min-[400px]:h-8 min-[400px]:w-8 pl-2 mb-1 " />
+                <ArrowDownCircleIcon className="hidden min-[400px]:inline-block lg:block h-6 w-6 min-[400px]:h-8 min-[400px]:w-8 lg:h-10 lg:w-10 pl-2 mb-1 lg:mb-0" />
               </span>
             </Link>
           </motion.div>
