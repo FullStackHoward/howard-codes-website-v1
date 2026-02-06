@@ -28,6 +28,15 @@ const navLinks = [
 const HowCoNav = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.replace('#', '');
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="absolute mx-auto top-0 left-0 right-0 z-10">
       <div className="flex flex-nowrap items-center justify-between mx-auto p-8">
@@ -68,7 +77,8 @@ const HowCoNav = () => {
             {navLinks.map((link, index) => (
               <li key={index}>
                 <Link 
-                  href={link.path} 
+                  href={link.path}
+                  onClick={(e) => handleClick(e, link.path)}
                   className="block py-2 pl-3 pr-4 text-[#deafd1] text-2xl md:text-3xl rounded md:p-0 hover:text-white transition-colors duration-200"
                 >
                   {link.title}
