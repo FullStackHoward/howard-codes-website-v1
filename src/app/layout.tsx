@@ -1,13 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { M_PLUS_Rounded_1c } from "next/font/google";
+import { mrounded } from "./fonts";
 import Script from "next/script";
-
-const MroundedPlus = M_PLUS_Rounded_1c({
-  subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "800", "900"],
-  variable: "--font-rounded",
-});
 
 export const metadata: Metadata = {
   title: "Howard Codes | Full-Stack Developer & DevOps Engineer in Maryland DMV",
@@ -88,7 +82,7 @@ export default function RootLayout({
           }}
         ></Script>
       </head>
-      <body className={`${MroundedPlus.variable} font-sans overflow-x-hidden`}>
+      <body className={`${mrounded.variable} font-sans overflow-x-hidden`}>
         {children}
       </body>
     </html>
