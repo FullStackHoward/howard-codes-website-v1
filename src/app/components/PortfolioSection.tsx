@@ -50,7 +50,7 @@ const pData = [
     id: 5,
     title: "Big Notch",
     description:
-      "I created this website to showcase on distribute my own music.",
+      "I created this website to showcase and distribute my own music.",
     image: "/img/music.png",
     tag: ["All", "Personal"],
     previewUrl: "https://bignotch.com/",
@@ -60,7 +60,7 @@ const pData = [
     id: 6,
     title: "Vicers",
     description:
-      "I built this website to chronicle my development journey in areas like full-stack applications, VR development, and AI language model learning.",
+      "I built this website to serve my gaming and creative communities, and it has become a hub for like-minded individuals to connect and share their work.",
     image: "/img/vicers.png",
     tag: ["All", "Personal"],
     previewUrl: "https://vicers.net/",

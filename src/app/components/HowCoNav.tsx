@@ -55,7 +55,7 @@ const HowCoNav = () => {
             />
           </motion.div>
         </Link>
-        <div className="mobile-menu pl-3 relative md:hidden">
+        <div className="mobile-menu pl-3 relative lg:hidden">
           {!navbarOpen ? (
             <button onClick={() => setNavbarOpen(true)}>
               <Bars3Icon className=" h-10 w-10 text-[#deafd1]" />
@@ -70,16 +70,16 @@ const HowCoNav = () => {
           initial={{ x: "100%", opacity: 0, scale: 0 }}
           animate={{ x: "0%", opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="menu hidden md:block md:w-auto"
+          className="menu hidden lg:block lg:w-auto"
           id="navbar"
         >
-          <ul className="flex p-1 md:p-1 md:flex-row md:space-x-8 mt-0">
+          <ul className="flex p-1 lg:p-1 lg:flex-row lg:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <Link 
                   href={link.path}
                   onClick={(e) => handleClick(e, link.path)}
-                  className="block py-2 pl-3 pr-4 text-[#deafd1] text-2xl md:text-3xl rounded md:p-0 hover:text-white transition-colors duration-200"
+                  className="block py-2 pl-3 pr-4 text-[#deafd1] text-2xl lg:text-3xl rounded lg:p-0 hover:text-white transition-colors duration-200"
                 >
                   {link.title}
                 </Link>
