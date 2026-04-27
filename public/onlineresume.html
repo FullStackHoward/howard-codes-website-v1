@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Howard Resume - FullStack</title>
+    <style>:root {
+        --bg: #0f1730;
+        --panel: #141f3f;
+        --panel2: #0d142c;
+        --text: #f4f7ff;
+        --muted: #cfd5f3;
+        --accent: #a67be8;
+        --accent2: #47c0ff;
+        --line: #2b386b;
+    }
+
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        margin: 0;
+        background: radial-gradient(circle at top, #26335f 0%, #111933 45%, #0a1021 100%);
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text)
+    }
+
+    .page {
+        max-width: 980px;
+        margin: 28px auto;
+        padding: 0 18px
+    }
+
+    .resume {
+        background: linear-gradient(180deg, var(--panel) 0%, var(--panel2) 100%);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, .35)
+    }
+
+    .header {
+        padding: 34px 38px;
+        background: linear-gradient(135deg, #1d2950 0%, #172347 45%, #121b37 100%);
+        border-bottom: 1px solid var(--line)
+    }
+
+    .name {
+        font-size: 38px;
+        font-weight: 800;
+        margin: 0 0 8px
+    }
+
+    .name span {
+        background: linear-gradient(90deg, var(--accent), var(--accent2));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent
+    }
+
+    .contact {
+        font-size: 14px;
+        color: var(--muted)
+    }
+
+    .tag {
+        display: inline-block;
+        margin-top: 14px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(166, 123, 232, .16);
+        color: #e3d4ff;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: .8px
+    }
+
+    .main {
+        padding: 30px 38px 34px
+    }
+
+    .section {
+        margin-bottom: 26px
+    }
+
+    .section-title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 0 0 14px;
+        font-size: 14px;
+        font-weight: 800;
+        letter-spacing: 1.4px;
+        color: #d9c8ff;
+        text-transform: uppercase
+    }
+
+    .section-title:before {
+        content: '';
+        width: 42px;
+        height: 4px;
+        border-radius: 99px;
+        background: linear-gradient(90deg, var(--accent), var(--accent2))
+    }
+
+    .role {
+        padding: 18px 20px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, .02);
+        margin-bottom: 16px
+    }
+
+    .role-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-bottom: 6px
+    }
+
+    .company {
+        font-size: 22px;
+        font-weight: 800
+    }
+
+    .meta {
+        font-size: 14px;
+        color: var(--muted);
+        font-weight: 700
+    }
+
+    .title {
+        font-size: 15px;
+        color: #d2b8ff;
+        font-weight: 800;
+        margin-bottom: 10px
+    }
+
+    ul {
+        margin: 0;
+        padding-left: 20px;
+        line-height: 1.5
+    }
+
+    li {
+        margin: 0 0 8px
+    }
+
+    .edu {
+        padding: 16px 18px;
+        border-left: 4px solid var(--accent);
+        background: rgba(255, 255, 255, .03);
+        border-radius: 0 12px 12px 0;
+        margin-bottom: 12px
+    }
+
+    @media print {
+        body {
+            background: #fff
+        }
+
+        .page {
+            max-width: none;
+            margin: 0;
+            padding: 0
+        }
+
+        .resume {
+            border: none;
+            border-radius: 0;
+            box-shadow: none
+        }
+
+        .role {
+            break-inside: avoid;
+            page-break-inside: avoid
+        }
+    }</style>
+</head>
+<body>
+<div class="page">
+    <div class="resume">
+        <header class="header"><h1 class="name">Joshua <span>Howard</span></h1>
+            <div class="contact">Baltimore - Washington DC | 504-289-7988 |
+                joshuahoward87@yahoo.com
+            </div>
+            <!-- Replaced static tag with navigation + download buttons -->
+            <div class="tag" style="background: transparent; padding: 0; margin-top: 12px; display:flex; gap:12px; align-items:center;">
+                <!-- Back to Portfolio button (styled similarly to resume button) -->
+                <a href="https://howard.codes" aria-label="Back to portfolio" style="display:inline-flex;align-items:center;padding:8px 14px;border-radius:999px;background:white;color:black;font-weight:600;font-size:16px;text-transform:uppercase;text-decoration:none;">
+                    <!-- Left arrow (simple SVG) -->
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right:8px;vertical-align:middle;display:inline-block;" aria-hidden="true" focusable="false">
+                        <path d="M12 5l-7 7 7 7" stroke="#0b1022" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Back to Portfolio
+                </a>
+                <a href="/doc/resume_fullstack_2026.pdf" download aria-label="Download full-stack resume (PDF)" style="display:inline-flex;align-items:center;padding:8px 14px;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#0b1022;font-weight:600;font-size:16px;text-transform:uppercase;text-decoration:none;">
+                    Download This Resume
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left:8px;vertical-align:middle;display:inline-block;flex-shrink:0;" aria-hidden="true" focusable="false">
+                        <path d="M19 12l-7 7-7-7" stroke="#0b1022" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </header>
+        <main class="main">
+            <section class="section"><h2 class="section-title">Relevant Work Experience</h2>
+                <div class="role">
+                    <div class="role-head">
+                        <div>
+                            <div class="company">LifeBridge Health</div>
+                            <div class="title">Web Developer / Digital Operations Lead</div>
+                        </div>
+                        <div class="meta">Baltimore, Maryland | November 2020 - Present</div>
+                    </div>
+                    <ul>
+                        <li>Served as the sole technical developer on the web team, owning the full stack across a
+                            legacy .NET CMS, WordPress, and an ongoing Drupal migration.
+                        </li>
+                        <li>Developed a custom Drupal contributed module using the Kyruus API to dynamically surface
+                            physician directory listings on the front end based on configurable parameters, preceded by
+                            a JavaScript-based prototype used in executive board presentations.
+                        </li>
+                        <li>Led the organization's CMS migration from a legacy .NET platform to Drupal, managing Git
+                            workflows, GitLab CI/CD pipelines, and dev-to-production deployment processes.
+                        </li>
+                        <li>Directed two major website overhauls, including a full UX restructuring and content
+                            consolidation that reduced the site from thousands of pages to a few hundred.
+                        </li>
+                        <li>Architected a development workflow using VSCode and Cacher.io that enabled a non-technical
+                            team to reuse code blocks, significantly accelerating output on a legacy .NET platform.
+                        </li>
+                        <li>Established and managed a WPEngine environment to host partner and satellite websites,
+                            ensuring consistency with LifeBridge Health branding guidelines.
+                        </li>
+                        <li>Manage all domains and DNS records across the full LifeBridge Health system, including
+                            hospitals, clinics, and partner organizations.
+                        </li>
+                        <li>Build and maintain campaign landing pages, multi-page website subsections, and full Drupal
+                            front-end and back-end components across the organization's digital ecosystem.
+                        </li>
+                        <li>Leveraged BrightEdge for enterprise SEO, Invoca for call analytics, and Salesforce Marketing
+                            Cloud for email campaigns.
+                        </li>
+                    </ul>
+                </div>
+                <div class="role">
+                    <div class="role-head">
+                        <div>
+                            <div class="company">FullStackHoward LLC</div>
+                            <div class="title">Owner / Full-Stack Developer</div>
+                        </div>
+                        <div class="meta">Cockeysville, Maryland | October 2025 - Present</div>
+                    </div>
+                    <ul>
+                        <li>Design, develop, and deploy custom WordPress websites on self-managed Apache servers running
+                            Rocky Linux, handling full server configuration including email setup, domain management,
+                            and WordPress optimization.
+                        </li>
+                        <li>Develop custom WordPress plugins to deliver tailored functionality beyond out-of-the-box CMS
+                            capabilities, meeting unique client requirements.
+                        </li>
+                        <li>Build and deploy React applications for clients requiring custom functionality and a
+                            scalable architecture capable of growing with their business needs.
+                        </li>
+                        <li>Developed a full-stack PHP Laravel application with a Filament-powered admin panel for a
+                            Baltimore theater group, enabling the client to independently manage show calendars, banner
+                            images, and dynamic content.
+                        </li>
+                        <li>Implement GitHub Actions CI/CD pipelines to automate deployments, ensuring client websites
+                            update instantly upon code changes without manual intervention.
+                        </li>
+                        <li>Manage SEO strategy, Google Analytics, and performance optimization for client websites,
+                            using Pingdom Tools during development to consistently achieve A+ load time scores.
+                        </li>
+                    </ul>
+                </div>
+                <div class="role">
+                    <div class="role-head">
+                        <div>
+                            <div class="company">Aon Corporation</div>
+                            <div class="title">Software Automation Engineer</div>
+                        </div>
+                        <div class="meta">Hunt Valley, Maryland | September 2016 - February 2020</div>
+                    </div>
+                    <ul>
+                        <li>Designed and developed automated benefits processing workflows using WebMethods, writing
+                            Java-based methods to handle high-volume EDI and flat file transactions including 834 files,
+                            payroll deductions, and benefits elections.
+                        </li>
+                        <li>Engineered advanced data filtering and transformation logic using Java and Regex to ensure
+                            data integrity across diverse client file formats.
+                        </li>
+                        <li>Wrote complex, multi-layered SQL queries to extract, validate, and reconcile benefits
+                            enrollment data from enterprise databases.
+                        </li>
+                        <li>Developed and rigorously tested payroll deduction algorithms against multiple datasets,
+                            ensuring compliance with client-specific business rules before deployment.
+                        </li>
+                        <li>Served as the primary client-facing analyst for large enterprise accounts, translating
+                            complex benefits enrollment requirements into technical specifications for development
+                            teams.
+                        </li>
+                    </ul>
+                </div>
+                <div class="role">
+                    <div class="role-head">
+                        <div>
+                            <div class="company">Web By Howard LLC</div>
+                            <div class="title">Owner / Freelance Developer</div>
+                        </div>
+                        <div class="meta">Dallas, Texas | January 2016 - November 2020</div>
+                    </div>
+                    <ul>
+                        <li>Managed, maintained, and optimized 50+ WordPress and Drupal websites, proactively resolving
+                            technical issues to maintain uptime, security, and performance.
+                        </li>
+                        <li>Developed custom WordPress and Drupal themes from scratch using Figma, PHP, HTML, CSS, and
+                            JavaScript, delivering client-aligned designs from concept to deployment.
+                        </li>
+                        <li>Built custom WordPress plugins and Drupal modules to extend CMS functionality beyond
+                            out-of-the-box capabilities.
+                        </li>
+                        <li>Converted static websites into dynamic CMS-driven platforms using the Laravel PHP
+                            framework.
+                        </li>
+                        <li>Developed tailored front-end experiences using React.js, TypeScript, React Native, and
+                            Tailwind CSS.
+                        </li>
+                        <li>Designed and built a unified Django REST Framework API serving two community web properties
+                            from a single backend, replacing static hardcoded content with a fully dynamic data layer.
+                        </li>
+                        <li>Designed a PostgreSQL 16 database schema across three Django apps covering events, squads,
+                            games, projects, and announcements.
+                        </li>
+                        <li>Implemented bi-directional Discord integration, syncing scheduled events from Discord into
+                            the database via async API calls and pushing admin-created events back to Discord via
+                            signals.
+                        </li>
+                        <li>Set up GitHub Actions CI/CD pipelines for automated deployment of Django API and Node.js
+                            Discord bot services.
+                        </li>
+                    </ul>
+                </div>
+                <div class="role">
+                    <div class="role-head">
+                        <div>
+                            <div class="company">Texas Tech University Athletics</div>
+                            <div class="title">IT Support Specialist</div>
+                        </div>
+                        <div class="meta">Lubbock, Texas | October 2013 - December 2015</div>
+                    </div>
+                    <ul>
+                        <li>Assumed responsibility for the full computer deployment process, including building and
+                            maintaining system images pre-configured with campus security policies and approved
+                            software.
+                        </li>
+                        <li>Managed Active Directory user accounts and group permissions, controlling employee access to
+                            network drives and shared resources.
+                        </li>
+                        <li>Identified and solved a critical gap in the campus backup strategy by developing an
+                            AppleScript solution that automated daily backups to a network drive for all department Mac
+                            computers.
+                        </li>
+                        <li>Collaborated with the campus networking team to diagnose and maintain Windows IIS
+                            infrastructure, developing PowerShell scripting skills in the process.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section"><h2 class="section-title">Education</h2>
+                <div class="edu"><strong>Western Governors University</strong><br>Master of Science:
+                    Software Engineering (DevOps Concentration)
+                </div>
+                <div class="edu"><strong>Texas Tech University</strong> | Lubbock, Texas<br>Bachelor of Science:
+                    Interdisciplinary Studies (Management Information Systems and Computer Science)
+                </div>
+                <div class="edu"><strong>Delgado Community College</strong> | New Orleans, Louisiana<br>Associate of
+                    Science: Computer Information Technology
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+</body>
+</html>

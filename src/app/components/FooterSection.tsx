@@ -17,7 +17,7 @@ const year = today.getFullYear();
 
 const navLinks = [
   {
-    path: "/doc/resume.pdf",
+    path: "/onlineresume.html",
     compName: <ResumeIcon />,
   },
   {

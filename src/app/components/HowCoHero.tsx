@@ -51,7 +51,7 @@ const HowCoHero = () => {
                   3000,
                   "DevOps Engineer",
                   3000,
-                  "Cloud Engineer",
+                  "Cloud Architect",
                   3000,
                 ]}
                 wrapper="span"
@@ -76,13 +76,13 @@ const HowCoHero = () => {
               </span>
             </Link>
             <Link
-              href={"/doc/resume.pdf"}
+              href={"/onlineresume.html"}
               scroll={true}
               className={`${styles.btn2} shadow-xl w-[300px] min-[400px]:w-[400px] h-[55px] md:w-[200px] lg:w-[280px] lg:h-[70px] lg:flex lg:items-center lg:justify-center`}
             >
-              <span className="relative inline-block top-2 lg:static lg:flex lg:items-center text-sm min-[400px]:text-base lg:text-xl">
-                My Resume
-                <ArrowDownCircleIcon className="hidden min-[400px]:inline-block lg:block h-6 w-6 min-[400px]:h-8 min-[400px]:w-8 lg:h-10 lg:w-10 pl-2 mb-1 lg:mb-0" />
+              <span className="inline-flex items-center text-sm min-[400px]:text-base lg:text-xl">
+                View My Resume
+                <ArrowDownCircleIcon className="ml-2 hidden min-[400px]:inline-block lg:block h-6 w-6 min-[400px]:h-8 min-[400px]:w-8 lg:h-10 lg:w-10 -rotate-90" aria-hidden="true" />
               </span>
             </Link>
           </motion.div>
