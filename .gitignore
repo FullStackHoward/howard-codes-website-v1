@@ -1,9 +1,23 @@
+# build output
 .next
-node_modules
-.cache
-.vscode
 out
+.cache
+
+# dependencies
+node_modules
+
+# editors
+.vscode
+.idea
+
+# OS junk
+.DS_Store
+
+# env
 .env*
-!.env.example  # Include the example .env file
-public/uploads  # Or whatever your uploads directory is
+# Include the example .env file
+!.env.example
+
+# uploads
+public/uploads
 uploads

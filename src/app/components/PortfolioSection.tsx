@@ -48,23 +48,23 @@ const pData = [
   },
   {
     id: 5,
-    title: "Big Notch",
+    title: "Its Notch",
     description:
-      "I created this website to showcase and distribute my own music.",
-    image: "/img/music.png",
+      "I created this website to showcase and distribute my own compositions and music projects.",
+    image: "/img/music.jpg",
     tag: ["All", "Personal"],
-    previewUrl: "https://bignotch.com/",
-    techList: ["HTML5", "CSS3", "PHP", "MySQL", "Drupal"],
+    previewUrl: "https://itsnotch.com/",
+    techList: ["PHP", "Laravel", "PostgreSQL", "Filament", "Javascript", "TailwindCSS"],
   },
   {
     id: 6,
     title: "Vicers",
     description:
-      "I built this website to serve my gaming and creative communities, and it has become a hub for like-minded individuals to connect and share their work.",
+      "I built this website to serve my gaming and creative communities, as well as a backend api for managing content across many websites under one roof.",
     image: "/img/vicers.png",
     tag: ["All", "Personal"],
     previewUrl: "https://vicers.net/",
-    techList: ["HTML5", "CSS3", "PHP", "MySQL", "Wordpress"],
+    techList: ["Django", "Python", "Javascript", "CSS3", "PHP", "MySQL", "Wordpress"],
   },
   {
     id: 7,
@@ -75,6 +75,16 @@ const pData = [
     tag: ["All", "Professional"],
     previewUrl: "https://pottshomerestoration.com",
     techList: ["Wordpress", "TailwindCSS", "React", "PHP"],
+  },
+  {
+    id: 8,
+    title: "Perform Strong Physical Therapy",
+    description:
+      "I developed this website for a small physical therapy practice to showcase their services and connect with potential clients.",
+    image: "/img/pspt.jpg",
+    tag: ["All", "Professional"],
+    previewUrl: "https://performstrongpt.com",
+    techList: ["Wordpress", "TailwindCSS", "React", "PHP", "MySQL", "Javascript"],
   },
 ];
 
